@@ -20,7 +20,7 @@ flowchart LR
 ## Komponen
 | Komponen | Teknologi | Catatan |
 |---|---|---|
-| Web | Next.js + Tailwind | Satu halaman per tool (baik untuk SEO) |
+| Web | Next.js + Tailwind v4 + shadcn/ui + Lucide | Satu halaman per tool (baik untuk SEO) |
 | API | FastAPI (Python 3.11+) | Swagger otomatis di `/docs` |
 | Job | asyncio / RQ | Redis baru ditambah jika perlu |
 | Kontainer | Docker + Compose | Semua dependensi sistem di image API |

@@ -18,7 +18,7 @@ Kamu membantu membangun **Wade Convert**, toolkit konversi file online open sour
 - Lisensi AGPL-3.0; jangan menambahkan dependensi dengan lisensi yang tidak kompatibel.
 
 ## Stack
-- Web: Next.js (App Router) + TypeScript + Tailwind; pdf-lib, pdf.js, canvas/WASM
+- Web: Next.js (App Router) + TypeScript + Tailwind v4 + shadcn/ui + Lucide icons; pdf-lib, pdf.js, canvas/WASM
 - API: FastAPI (Python 3.11+); PyMuPDF4LLM, OCRmyPDF/Tesseract, Ghostscript, ImageMagick
 - Infra: Docker, Docker Compose, GitHub Actions
 
