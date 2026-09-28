@@ -14,7 +14,7 @@ Centang saat selesai. Kerjakan berurutan dari atas.
 - [x] Layout dasar: header, beranda dengan kartu daftar tool, footer, dark mode
 - [x] Komponen upload reusable (drag and drop, daftar file, progres, unduh)
 - [x] Tool: Kompres gambar (canvas), jadikan template pola tool
-- [ ] Tool: Konversi format gambar (JPG/PNG/WebP)
+- [x] Tool: Konversi format gambar (JPG/PNG/WebP)
 - [ ] Tool: Gabung PDF (pdf-lib)
 - [ ] Tool: Pisah PDF (pdf-lib)
 - [ ] Tool: PDF ke JPG/PNG (pdf.js)
