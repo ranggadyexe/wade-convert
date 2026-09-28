@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
+import { Geist } from "next/font/google";
 import Link from "next/link";
 
 import { TombolTema } from "@/components/theme-toggle";
 import { teks } from "@/lib/i18n";
+import { cn } from "@/lib/utils";
 
 import "./globals.css";
-import { Geist } from "next/font/google";
-import { cn } from "@/lib/utils";
 
 const geist = Geist({ subsets: ["latin"], variable: "--font-sans" });
 
@@ -22,9 +22,12 @@ const SKRIP_TEMA = `try{const t=localStorage.getItem("${KUNCI_TEMA}");const d=t?
 
 function Header() {
   return (
-    <header className="border-b border-slate-200 dark:border-slate-800">
+    <header className="border-b border-border">
       <div className="mx-auto flex w-full max-w-5xl items-center justify-between gap-4 px-4 py-3">
-        <Link href="/" className="text-lg font-semibold tracking-tight">
+        <Link
+          href="/"
+          className="font-heading text-lg font-semibold tracking-tight"
+        >
           {teks.namaSitus}
         </Link>
         <TombolTema kunciTema={KUNCI_TEMA} />
@@ -35,8 +38,8 @@ function Header() {
 
 function Footer() {
   return (
-    <footer className="border-t border-slate-200 dark:border-slate-800">
-      <div className="mx-auto w-full max-w-5xl px-4 py-6 text-sm text-slate-500 dark:text-slate-400">
+    <footer className="border-t border-border">
+      <div className="mx-auto w-full max-w-5xl px-4 py-6 text-sm text-muted-foreground">
         <p>{teks.footerCatatan}</p>
       </div>
     </footer>
@@ -50,7 +53,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       suppressHydrationWarning
       className={cn("font-sans", geist.variable)}
     >
-      <body className="flex min-h-dvh flex-col bg-white text-slate-900 antialiased dark:bg-slate-950 dark:text-slate-100">
+      <body className="flex min-h-dvh flex-col bg-background text-foreground antialiased">
         <script dangerouslySetInnerHTML={{ __html: SKRIP_TEMA }} />
         <Header />
         <main className="mx-auto w-full max-w-5xl flex-1 px-4 py-10">

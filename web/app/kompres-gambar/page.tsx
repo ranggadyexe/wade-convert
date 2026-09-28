@@ -15,11 +15,11 @@ export default function HalamanKompresGambar() {
   return (
     <>
       <section className="max-w-2xl">
-        <h1 className="text-3xl font-bold tracking-tight">{alat?.nama}</h1>
-        <p className="mt-3 text-slate-600 dark:text-slate-400">
-          {alat?.deskripsi}
-        </p>
-        <p className="mt-2 text-xs font-medium text-emerald-700 dark:text-emerald-400">
+        <h1 className="font-heading text-3xl font-bold tracking-tight">
+          {alat?.nama}
+        </h1>
+        <p className="mt-3 text-muted-foreground">{alat?.deskripsi}</p>
+        <p className="mt-2 text-xs font-medium text-primary">
           {teks.labelBrowser}
         </p>
       </section>
