@@ -40,7 +40,7 @@ Keterangan: **[B]** = jalan di browser, **[S]** = butuh server.
 - **Responsif**: nyaman dipakai di HP; mendukung dark mode.
 
 ## 7. Arsitektur ringkas
-Frontend statis (Next.js) untuk semua tool [B]. Backend FastAPI untuk tool [S], dengan antrean job sederhana dan penyimpanan sementara. Semua dibungkus Docker. Detail: [architecture.md](architecture.md).
+Frontend statis (Next.js) untuk semua tool [B]. Backend FastAPI untuk tool [S], dengan antrean job sederhana dan penyimpanan sementara. Semua dibungkus Docker. Komponen UI frontend memakai shadcn/ui (Tailwind v4) dengan ikon Lucide dan tema netral + satu aksen ([ADR 0004](adr/0004-ui-shadcn.md)). Detail: [architecture.md](architecture.md).
 
 ## 8. Rencana DevOps
 | Lingkungan | Tujuan | Cara |
