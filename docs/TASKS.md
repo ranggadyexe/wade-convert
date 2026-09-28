@@ -10,7 +10,7 @@ Centang saat selesai. Kerjakan berurutan dari atas.
 
 ## Fase 1: Frontend + tool browser (Tahap 1 PRD)
 - [x] Inisialisasi Next.js + TypeScript + Tailwind di `web/` (App Router)
-- [ ] Layout dasar: header, beranda dengan kartu daftar tool, footer, dark mode
+- [x] Layout dasar: header, beranda dengan kartu daftar tool, footer, dark mode
 - [ ] Komponen upload reusable (drag and drop, daftar file, progres, unduh)
 - [ ] Tool: Kompres gambar (canvas), jadikan template pola tool
 - [ ] Tool: Konversi format gambar (JPG/PNG/WebP)
