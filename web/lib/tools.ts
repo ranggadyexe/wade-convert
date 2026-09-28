@@ -15,7 +15,7 @@ export const ALAT: readonly Alat[] = [
     nama: "Gabung PDF",
     deskripsi: "Satukan beberapa file PDF menjadi satu dokumen.",
     proses: "browser",
-    status: "segera",
+    status: "tersedia",
   },
   {
     slug: "pisah-pdf",
