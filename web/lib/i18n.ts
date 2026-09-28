@@ -7,6 +7,19 @@ export const teks = {
   labelBrowser: "Diproses di browser",
   labelSegera: "Segera",
   gantiTema: "Ganti tema terang/gelap",
+  unggah: {
+    tarik: "Tarik file ke sini atau klik untuk memilih",
+    pilih: "Pilih file",
+    batas: (maksMB: number) => `Maksimum ${maksMB} MB per file`,
+    unduh: "Unduh",
+    hapus: "Hapus",
+    status: {
+      menunggu: "Menunggu",
+      diproses: "Diproses...",
+      selesai: "Selesai",
+      gagal: "Gagal",
+    },
+  },
   footerCatatan: "Open source berlisensi AGPL-3.0. Tanpa akun dan tanpa iklan.",
 } as const;
 
