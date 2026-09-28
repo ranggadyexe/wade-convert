@@ -20,6 +20,12 @@ export const teks = {
       gagal: "Gagal",
     },
   },
+  kompres: {
+    kualitas: "Kualitas",
+    proses: "Kompres",
+    memproses: "Memproses...",
+    gagal: "Gagal mengompres gambar",
+  },
   footerCatatan: "Open source berlisensi AGPL-3.0. Tanpa akun dan tanpa iklan.",
 } as const;
 

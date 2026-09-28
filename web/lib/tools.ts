@@ -43,7 +43,7 @@ export const ALAT: readonly Alat[] = [
     nama: "Kompres gambar",
     deskripsi: "Kecilkan ukuran foto agar lolos batas unggahan pendaftaran.",
     proses: "browser",
-    status: "segera",
+    status: "tersedia",
   },
   {
     slug: "konversi-gambar",

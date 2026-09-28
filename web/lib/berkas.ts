@@ -8,6 +8,7 @@ export type ItemBerkas = {
   progres: number;
   urlHasil?: string;
   namaHasil?: string;
+  ukuranHasil?: number;
   pesan?: string;
 };
 

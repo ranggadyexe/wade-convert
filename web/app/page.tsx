@@ -1,9 +1,14 @@
+import Link from "next/link";
+
 import { teks } from "@/lib/i18n";
 import { ALAT, type Alat } from "@/lib/tools";
 
-function KartuAlat({ alat }: { alat: Alat }) {
+const KELAS_KARTU =
+  "flex h-full flex-col rounded-xl border border-slate-200 bg-white p-5 shadow-sm transition dark:border-slate-800 dark:bg-slate-900";
+
+function IsiKartu({ alat }: { alat: Alat }) {
   return (
-    <div className="flex h-full flex-col rounded-xl border border-slate-200 bg-white p-5 shadow-sm transition hover:border-sky-400 dark:border-slate-800 dark:bg-slate-900 dark:hover:border-sky-500">
+    <>
       <div className="flex items-start justify-between gap-3">
         <h3 className="font-semibold">{alat.nama}</h3>
         {alat.status === "segera" ? (
@@ -18,6 +23,24 @@ function KartuAlat({ alat }: { alat: Alat }) {
       <p className="mt-4 text-xs font-medium text-emerald-700 dark:text-emerald-400">
         {teks.labelBrowser}
       </p>
+    </>
+  );
+}
+
+function KartuAlat({ alat }: { alat: Alat }) {
+  if (alat.status === "tersedia") {
+    return (
+      <Link
+        href={`/${alat.slug}`}
+        className={`${KELAS_KARTU} hover:border-sky-400 dark:hover:border-sky-500`}
+      >
+        <IsiKartu alat={alat} />
+      </Link>
+    );
+  }
+  return (
+    <div className={KELAS_KARTU}>
+      <IsiKartu alat={alat} />
     </div>
   );
 }
