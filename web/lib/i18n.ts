@@ -26,6 +26,12 @@ export const teks = {
     memproses: "Memproses...",
     gagal: "Gagal mengompres gambar",
   },
+  konversi: {
+    format: "Format keluaran",
+    proses: "Konversi",
+    memproses: "Memproses...",
+    gagal: "Gagal mengonversi gambar",
+  },
   footerCatatan: "Open source berlisensi AGPL-3.0. Tanpa akun dan tanpa iklan.",
 } as const;
 
