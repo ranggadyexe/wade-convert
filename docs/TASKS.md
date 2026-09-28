@@ -15,7 +15,7 @@ Centang saat selesai. Kerjakan berurutan dari atas.
 - [x] Komponen upload reusable (drag and drop, daftar file, progres, unduh)
 - [x] Tool: Kompres gambar (canvas), jadikan template pola tool
 - [x] Tool: Konversi format gambar (JPG/PNG/WebP)
-- [ ] Tool: Gabung PDF (pdf-lib)
+- [x] Tool: Gabung PDF (pdf-lib)
 - [ ] Tool: Pisah PDF (pdf-lib)
 - [ ] Tool: PDF ke JPG/PNG (pdf.js)
 - [ ] Tool: JPG/PNG ke PDF
