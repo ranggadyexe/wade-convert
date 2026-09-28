@@ -59,8 +59,8 @@ export function DropzoneBerkas({
         }}
         className={`cursor-pointer rounded-xl border-2 border-dashed px-6 py-10 text-center transition ${
           seret
-            ? "border-sky-500 bg-sky-50 dark:bg-sky-950/40"
-            : "border-slate-300 hover:border-sky-400 dark:border-slate-700"
+            ? "border-primary bg-primary/5"
+            : "border-slate-300 hover:border-primary/60 dark:border-slate-700"
         }`}
       >
         <p className="font-medium">{teks.unggah.tarik}</p>

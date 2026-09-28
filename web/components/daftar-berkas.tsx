@@ -33,7 +33,7 @@ export function DaftarBerkas({ daftar, onHapus }: Props) {
                 className="mt-2 h-1.5 w-full overflow-hidden rounded-full bg-slate-200 dark:bg-slate-800"
               >
                 <div
-                  className="h-full rounded-full bg-sky-500 transition-all"
+                  className="h-full rounded-full bg-primary transition-all"
                   style={{ width: `${item.progres}%` }}
                 />
               </div>
@@ -49,7 +49,7 @@ export function DaftarBerkas({ daftar, onHapus }: Props) {
             <a
               href={item.urlHasil}
               download={item.namaHasil ?? item.nama}
-              className="shrink-0 rounded-lg bg-sky-600 px-3 py-1.5 text-sm font-medium text-white transition hover:bg-sky-700"
+              className="shrink-0 rounded-lg bg-primary px-3 py-1.5 text-sm font-medium text-primary-foreground transition hover:bg-primary/90"
             >
               {teks.unggah.unduh}
             </a>

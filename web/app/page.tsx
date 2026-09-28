@@ -32,7 +32,7 @@ function KartuAlat({ alat }: { alat: Alat }) {
     return (
       <Link
         href={`/${alat.slug}`}
-        className={`${KELAS_KARTU} hover:border-sky-400 dark:hover:border-sky-500`}
+        className={`${KELAS_KARTU} hover:border-primary/60`}
       >
         <IsiKartu alat={alat} />
       </Link>
