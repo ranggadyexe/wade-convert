@@ -9,7 +9,7 @@ Centang saat selesai. Kerjakan berurutan dari atas.
 - [x] Pasang pre-commit (ruff, prettier)
 
 ## Fase 1: Frontend + tool browser (Tahap 1 PRD)
-- [ ] Inisialisasi Next.js + TypeScript + Tailwind v4 di `web/` (App Router)
+- [x] Inisialisasi Next.js + TypeScript + Tailwind v4 di `web/` (App Router)
 - [ ] Setup shadcn/ui + tema warna (lihat ADR 0004), ikon Lucide
 - [x] Layout dasar: header, beranda dengan kartu daftar tool, footer, dark mode
 - [x] Komponen upload reusable (drag and drop, daftar file, progres, unduh)
