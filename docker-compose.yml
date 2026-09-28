@@ -1,0 +1,23 @@
+services:
+  api:
+    build: ./api
+    env_file: .env
+    ports:
+      - "${API_PORT:-8000}:8000"
+    read_only: false
+    tmpfs:
+      - /tmp
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/health')"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+
+  # Aktifkan setelah folder web/ diinisialisasi (lihat docs/TASKS.md, Fase 1)
+  # web:
+  #   build: ./web
+  #   env_file: .env
+  #   ports:
+  #     - "${WEB_PORT:-3000}:3000"
+  #   depends_on:
+  #     - api
