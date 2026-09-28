@@ -3,10 +3,10 @@
 Centang saat selesai. Kerjakan berurutan dari atas.
 
 ## Fase 0: Fondasi
-- [ ] Inisialisasi git, commit pertama (`chore: initial project scaffold`)
+- [x] Inisialisasi git, commit pertama (`chore: initial project scaffold`)
 - [ ] Push ke GitHub, atur branch protection untuk `main`
-- [ ] Verifikasi `docker compose up --build` menjalankan API dan `GET /health` mengembalikan `{"status":"ok"}`
-- [ ] Pasang pre-commit (ruff, prettier)
+- [x] Verifikasi `docker compose up --build` menjalankan API dan `GET /health` mengembalikan `{"status":"ok"}`
+- [x] Pasang pre-commit (ruff, prettier)
 
 ## Fase 1: Frontend + tool browser (Tahap 1 PRD)
 - [ ] Inisialisasi Next.js + TypeScript + Tailwind di `web/` (App Router)
