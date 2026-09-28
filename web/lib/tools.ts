@@ -50,6 +50,6 @@ export const ALAT: readonly Alat[] = [
     nama: "Konversi format gambar",
     deskripsi: "Ubah gambar antara format JPG, PNG, dan WebP.",
     proses: "browser",
-    status: "segera",
+    status: "tersedia",
   },
 ];
