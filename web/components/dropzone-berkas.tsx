@@ -60,11 +60,11 @@ export function DropzoneBerkas({
         className={`cursor-pointer rounded-xl border-2 border-dashed px-6 py-10 text-center transition ${
           seret
             ? "border-primary bg-primary/5"
-            : "border-slate-300 hover:border-primary/60 dark:border-slate-700"
+            : "border-border hover:border-primary/60"
         }`}
       >
         <p className="font-medium">{teks.unggah.tarik}</p>
-        <p className="mt-1 text-sm text-slate-500 dark:text-slate-400">
+        <p className="mt-1 text-sm text-muted-foreground">
           {teks.unggah.batas(maksMB)}
         </p>
       </div>
@@ -82,7 +82,7 @@ export function DropzoneBerkas({
       />
 
       {kesalahan.length > 0 ? (
-        <ul className="mt-3 space-y-1 text-sm text-red-600 dark:text-red-400">
+        <ul className="mt-3 space-y-1 text-sm text-destructive">
           {kesalahan.map((pesan) => (
             <li key={pesan}>{pesan}</li>
           ))}

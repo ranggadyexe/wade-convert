@@ -4,6 +4,8 @@ import { useEffect, useRef, useState } from "react";
 
 import { DaftarBerkas } from "@/components/daftar-berkas";
 import { DropzoneBerkas } from "@/components/dropzone-berkas";
+import { Button } from "@/components/ui/button";
+import { Slider } from "@/components/ui/slider";
 import { buatItem, type ItemBerkas } from "@/lib/berkas";
 import { teks } from "@/lib/i18n";
 import {
@@ -88,29 +90,26 @@ export function AlatKompresGambar() {
     <div>
       <DropzoneBerkas terima={EKSTENSI_GAMBAR} onTambah={onTambah} />
 
-      <div className="mt-4 flex flex-wrap items-center gap-4">
-        <label className="flex flex-1 items-center gap-3 text-sm">
-          <span className="whitespace-nowrap">
-            {teks.kompres.kualitas}: {Math.round(kualitas * 100)}%
-          </span>
-          <input
-            type="range"
-            min={0.3}
-            max={0.95}
-            step={0.05}
-            value={kualitas}
-            onChange={(event) => setKualitas(Number(event.target.value))}
-            className="w-full accent-primary"
-          />
-        </label>
-        <button
+      <div className="mt-6 flex flex-wrap items-center gap-4">
+        <span className="text-sm whitespace-nowrap">
+          {teks.kompres.kualitas}: {Math.round(kualitas * 100)}%
+        </span>
+        <Slider
+          className="min-w-40 flex-1"
+          min={0.3}
+          max={0.95}
+          step={0.05}
+          value={[kualitas]}
+          onValueChange={(nilai) => setKualitas(nilai[0])}
+          aria-label={teks.kompres.kualitas}
+        />
+        <Button
           type="button"
           onClick={proses}
           disabled={!adaMenunggu || sedangProses}
-          className="rounded-lg bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition hover:bg-primary/90 disabled:cursor-not-allowed disabled:bg-slate-300 dark:disabled:bg-slate-700"
         >
           {sedangProses ? teks.kompres.memproses : teks.kompres.proses}
-        </button>
+        </Button>
       </div>
 
       <DaftarBerkas daftar={daftar} onHapus={onHapus} />
