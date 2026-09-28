@@ -18,7 +18,11 @@ export function DaftarBerkas({ daftar, onHapus }: Props) {
           <div className="min-w-0 flex-1">
             <p className="truncate text-sm font-medium">{item.nama}</p>
             <p className="text-xs text-slate-500 dark:text-slate-400">
-              {formatUkuran(item.ukuran)} · {teks.unggah.status[item.status]}
+              {formatUkuran(item.ukuran)}
+              {item.ukuranHasil !== undefined
+                ? ` → ${formatUkuran(item.ukuranHasil)}`
+                : ""}{" "}
+              · {teks.unggah.status[item.status]}
             </p>
             {item.status === "diproses" ? (
               <div
