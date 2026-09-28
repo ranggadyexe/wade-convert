@@ -7,8 +7,9 @@ import { DropzoneBerkas } from "@/components/dropzone-berkas";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { buatItem, formatUkuran, type ItemBerkas } from "@/lib/berkas";
-import { EKSTENSI_PDF, gabungPdf, namaHasilGabung } from "@/lib/gabung-pdf";
+import { gabungPdf, namaHasilGabung } from "@/lib/gabung-pdf";
 import { teks } from "@/lib/i18n";
+import { EKSTENSI_PDF } from "@/lib/pdf";
 
 type Hasil = {
   url: string;
@@ -115,7 +116,7 @@ export function AlatGabungPdf() {
             <div>
               <p className="text-sm font-medium">{hasil.nama}</p>
               <p className="text-xs text-muted-foreground">
-                {teks.gabung.halaman(hasil.halaman)} ·{" "}
+                {teks.jumlahHalaman(hasil.halaman)} ·{" "}
                 {formatUkuran(hasil.ukuran)}
               </p>
             </div>
