@@ -12,7 +12,7 @@ Centang saat selesai. Kerjakan berurutan dari atas.
 - [x] Inisialisasi Next.js + TypeScript + Tailwind di `web/` (App Router)
 - [x] Layout dasar: header, beranda dengan kartu daftar tool, footer, dark mode
 - [x] Komponen upload reusable (drag and drop, daftar file, progres, unduh)
-- [ ] Tool: Kompres gambar (canvas), jadikan template pola tool
+- [x] Tool: Kompres gambar (canvas), jadikan template pola tool
 - [ ] Tool: Konversi format gambar (JPG/PNG/WebP)
 - [ ] Tool: Gabung PDF (pdf-lib)
 - [ ] Tool: Pisah PDF (pdf-lib)
