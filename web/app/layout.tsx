@@ -5,6 +5,10 @@ import { TombolTema } from "@/components/theme-toggle";
 import { teks } from "@/lib/i18n";
 
 import "./globals.css";
+import { Geist } from "next/font/google";
+import { cn } from "@/lib/utils";
+
+const geist = Geist({ subsets: ["latin"], variable: "--font-sans" });
 
 export const metadata: Metadata = {
   title: "Wade Convert",
@@ -41,7 +45,11 @@ function Footer() {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="id" suppressHydrationWarning>
+    <html
+      lang="id"
+      suppressHydrationWarning
+      className={cn("font-sans", geist.variable)}
+    >
       <body className="flex min-h-dvh flex-col bg-white text-slate-900 antialiased dark:bg-slate-950 dark:text-slate-100">
         <script dangerouslySetInnerHTML={{ __html: SKRIP_TEMA }} />
         <Header />

@@ -100,14 +100,14 @@ export function AlatKompresGambar() {
             step={0.05}
             value={kualitas}
             onChange={(event) => setKualitas(Number(event.target.value))}
-            className="w-full accent-sky-600"
+            className="w-full accent-primary"
           />
         </label>
         <button
           type="button"
           onClick={proses}
           disabled={!adaMenunggu || sedangProses}
-          className="rounded-lg bg-sky-600 px-4 py-2 text-sm font-medium text-white transition hover:bg-sky-700 disabled:cursor-not-allowed disabled:bg-slate-300 dark:disabled:bg-slate-700"
+          className="rounded-lg bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition hover:bg-primary/90 disabled:cursor-not-allowed disabled:bg-slate-300 dark:disabled:bg-slate-700"
         >
           {sedangProses ? teks.kompres.memproses : teks.kompres.proses}
         </button>
