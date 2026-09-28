@@ -20,9 +20,9 @@ export const ALAT: readonly Alat[] = [
   {
     slug: "pisah-pdf",
     nama: "Pisah PDF",
-    deskripsi: "Ambil halaman tertentu atau pecah PDF menjadi beberapa file.",
+    deskripsi: "Ambil halaman tertentu dari PDF menjadi file baru.",
     proses: "browser",
-    status: "segera",
+    status: "tersedia",
   },
   {
     slug: "pdf-ke-gambar",

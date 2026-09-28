@@ -1,7 +1,6 @@
 import { PDFDocument } from "pdf-lib";
 
-export const EKSTENSI_PDF = [".pdf"] as const;
-export const MAKS_HALAMAN = 100;
+import { MAKS_HALAMAN, muatPdf } from "./pdf.ts";
 
 export type HasilGabung = {
   blob: Blob;
@@ -17,9 +16,7 @@ export async function gabungPdf(berkas: readonly File[]): Promise<HasilGabung> {
   const hasil = await PDFDocument.create();
   let jumlahHalaman = 0;
   for (const file of berkas) {
-    const dokumen = await PDFDocument.load(await file.arrayBuffer(), {
-      ignoreEncryption: true,
-    });
+    const dokumen = await muatPdf(file);
     const halaman = await hasil.copyPages(dokumen, dokumen.getPageIndices());
     for (const h of halaman) hasil.addPage(h);
     jumlahHalaman += halaman.length;

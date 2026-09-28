@@ -38,8 +38,15 @@ export const teks = {
     gagal: "Gagal menggabung PDF",
     hasil: "Hasil gabungan",
     urutan: "Urutan gabungan mengikuti urutan daftar.",
-    halaman: (jumlah: number) => `${jumlah} halaman`,
   },
+  pisah: {
+    rentang: "Halaman yang diambil",
+    proses: "Pisah",
+    memproses: "Memisah...",
+    gagal: "Gagal memisah PDF",
+    hasil: "Hasil",
+  },
+  jumlahHalaman: (jumlah: number) => `${jumlah} halaman`,
   footerCatatan: "Open source berlisensi AGPL-3.0. Tanpa akun dan tanpa iklan.",
 } as const;
 
