@@ -32,6 +32,14 @@ export const teks = {
     memproses: "Memproses...",
     gagal: "Gagal mengonversi gambar",
   },
+  gabung: {
+    proses: "Gabung",
+    memproses: "Menggabung...",
+    gagal: "Gagal menggabung PDF",
+    hasil: "Hasil gabungan",
+    urutan: "Urutan gabungan mengikuti urutan daftar.",
+    halaman: (jumlah: number) => `${jumlah} halaman`,
+  },
   footerCatatan: "Open source berlisensi AGPL-3.0. Tanpa akun dan tanpa iklan.",
 } as const;
 
