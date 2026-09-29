@@ -116,7 +116,21 @@ export const teks = {
   footerCatatan: "Open source berlisensi AGPL-3.0. Tanpa akun dan tanpa iklan.",
   hakCipta: "© 2026 Rangga Dewa Yudhistira",
   dibuatDi: "Made in Cibubur, Indonesia",
-  kontak: "Contact Us",
+  kontakFooter: "Contact Us",
+  kontak: {
+    judul: "Hubungi Kami",
+    deskripsi:
+      "Ada masukan, pertanyaan, atau ingin bekerja sama? Kirim pesan lewat form ini.",
+    judulForm: "Tulis pesan",
+    catatan:
+      "Tombol kirim akan membuka aplikasi email di perangkatmu — tidak ada data yang dikirim ke server kami.",
+    nama: "Nama",
+    email: "Email (opsional)",
+    pesan: "Pesan",
+    kirim: "Buka aplikasi email",
+    wajibIsi: "Nama dan pesan wajib diisi.",
+    emailTidakValid: "Format email tidak valid.",
+  },
 } as const;
 
 export const kamus = { id: teks } as const;
