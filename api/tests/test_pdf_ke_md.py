@@ -1,8 +1,6 @@
 import pymupdf
-import pytest
 from fastapi.testclient import TestClient
 
-from app.config import settings
 from app.main import app
 
 client = TestClient(app)
@@ -17,12 +15,6 @@ def pdf_ke_bytes(*, halaman: int = 1, teks: str = "Halo dunia") -> bytes:
     data = dokumen.tobytes()
     dokumen.close()
     return data
-
-
-@pytest.fixture
-def penyimpanan_sementara(tmp_path, monkeypatch):
-    monkeypatch.setattr(settings, "storage_dir", str(tmp_path))
-    return tmp_path
 
 
 def test_pdf_ke_md_menghasilkan_markdown(penyimpanan_sementara):

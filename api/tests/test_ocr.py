@@ -4,7 +4,6 @@ import pymupdf
 import pytest
 from fastapi.testclient import TestClient
 
-from app.config import settings
 from app.main import app
 
 client = TestClient(app)
@@ -12,12 +11,6 @@ client = TestClient(app)
 butuh_tesseract = pytest.mark.skipif(
     shutil.which("tesseract") is None, reason="tesseract tidak terpasang"
 )
-
-
-@pytest.fixture
-def penyimpanan_sementara(tmp_path, monkeypatch):
-    monkeypatch.setattr(settings, "storage_dir", str(tmp_path))
-    return tmp_path
 
 
 def gambar_png_berteks() -> bytes:
