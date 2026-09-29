@@ -23,10 +23,28 @@ jobs:
       - run: ruff format --check .
       - run: PYTHONPATH=. pytest -q
 
-  docker-build:
+  web:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: web
     steps:
       - uses: actions/checkout@v4
-      - run: docker build ./api
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+          cache: npm
+          cache-dependency-path: web/package-lock.json
+      - run: npm ci
+      - run: npm run lint
+      - run: npm test
+      - run: npm run build
 
-  # Tambahkan job "web" (lint + build) setelah web/ diinisialisasi
+  docker-build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        service: [api, web]
+    steps:
+      - uses: actions/checkout@v4
+      - run: docker build ./${{ matrix.service }}
