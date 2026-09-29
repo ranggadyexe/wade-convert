@@ -1,4 +1,5 @@
 import asyncio
+import re
 import shutil
 import time
 import uuid
@@ -8,6 +9,21 @@ from fastapi import UploadFile
 
 UKURAN_CUPLIKAN = 1024 * 1024
 INTERVAL_PEMBERSIH_DETIK = 60.0
+POLA_ID_JOB = re.compile(r"^[0-9a-f]{32}$")
+
+
+def nama_aman(nama: str) -> str:
+    bersih = re.sub(r"[^\w\-. ]", "_", Path(nama).name).strip()
+    return bersih or "hasil"
+
+
+def resolusi_hasil(akar: Path, id_job: str, nama: str) -> Path | None:
+    if not POLA_ID_JOB.fullmatch(id_job):
+        return None
+    if nama != Path(nama).name or ".." in nama:
+        return None
+    jalur = akar / id_job / nama
+    return jalur if jalur.is_file() else None
 
 
 def buat_id_job() -> str:
