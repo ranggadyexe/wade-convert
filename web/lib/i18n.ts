@@ -8,6 +8,9 @@ export const teks = {
   labelSegera: "Segera",
   navAlat: "Alat",
   repoGitHub: "Repositori GitHub",
+  hero: {
+    ilustrasi: "Ilustrasi contoh konversi file dari PDF ke JPG",
+  },
   gantiTema: "Ganti tema terang/gelap",
   unggah: {
     tarik: "Tarik file ke sini atau klik untuk memilih",
