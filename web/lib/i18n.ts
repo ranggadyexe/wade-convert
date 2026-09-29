@@ -54,6 +54,13 @@ export const teks = {
     gagal: "Gagal mengubah PDF",
     hasil: "Hasil",
   },
+  kePdf: {
+    proses: "Buat PDF",
+    memproses: "Membuat...",
+    gagal: "Gagal membuat PDF",
+    hasil: "Hasil PDF",
+    urutan: "Urutan halaman mengikuti urutan daftar.",
+  },
   footerCatatan: "Open source berlisensi AGPL-3.0. Tanpa akun dan tanpa iklan.",
 } as const;
 

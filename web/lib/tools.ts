@@ -36,7 +36,7 @@ export const ALAT: readonly Alat[] = [
     nama: "JPG/PNG ke PDF",
     deskripsi: "Susun beberapa gambar menjadi satu file PDF.",
     proses: "browser",
-    status: "segera",
+    status: "tersedia",
   },
   {
     slug: "kompres-gambar",
