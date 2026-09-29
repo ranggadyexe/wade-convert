@@ -47,6 +47,13 @@ export const teks = {
     hasil: "Hasil",
   },
   jumlahHalaman: (jumlah: number) => `${jumlah} halaman`,
+  keGambar: {
+    skala: "Resolusi",
+    proses: "Ubah ke gambar",
+    memproses: "Merender...",
+    gagal: "Gagal mengubah PDF",
+    hasil: "Hasil",
+  },
   footerCatatan: "Open source berlisensi AGPL-3.0. Tanpa akun dan tanpa iklan.",
 } as const;
 

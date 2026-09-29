@@ -39,3 +39,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# pdf.js worker (disalin dari node_modules oleh scripts/salin-pdfjs.mjs)
+/public/pdf.worker.min.mjs
