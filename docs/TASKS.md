@@ -28,7 +28,7 @@ Centang saat selesai. Kerjakan berurutan dari atas.
       CloudConvert (ikon file dengan panah "TO", lihat referensi terlampir)
 - [x] Tambah card "pilih file" besar di tengah sebagai CTA utama, di bawah hero
 - [x] Reframe grid tools jadi section "Alat yang Didukung"
-- [ ] Tambah section "Keamanan Data" (3 poin: diproses di browser,
+- [x] Tambah section "Keamanan Data" (3 poin: diproses di browser,
       auto-hapus file di server, tanpa jual data) pakai Card shadcn + ikon Lucide
 - [ ] Tambah section "Kualitas Konversi" (3 poin: mesin open-source
       terpilih per tipe file, kontrol kompresi, hasil akurat)
