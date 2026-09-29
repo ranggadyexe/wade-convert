@@ -23,7 +23,7 @@ Centang saat selesai. Kerjakan berurutan dari atas.
 - [x] Tambah job lint/build web di CI
 
 ## Fase 1.5: Redesain landing page
-- [ ] Redesain Header: tambah nav "Alat" (scroll ke grid tools) + ikon GitHub
+- [x] Redesain Header: tambah nav "Alat" (scroll ke grid tools) + ikon GitHub
 - [ ] Redesain Hero: judul besar + deskripsi + ilustrasi kecil bergaya
       CloudConvert (ikon file dengan panah "TO", lihat referensi terlampir)
 - [ ] Tambah card "pilih file" besar di tengah sebagai CTA utama, di bawah hero
