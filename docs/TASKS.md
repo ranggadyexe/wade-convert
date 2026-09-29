@@ -17,7 +17,7 @@ Centang saat selesai. Kerjakan berurutan dari atas.
 - [x] Tool: Konversi format gambar (JPG/PNG/WebP)
 - [x] Tool: Gabung PDF (pdf-lib)
 - [x] Tool: Pisah PDF (pdf-lib)
-- [ ] Tool: PDF ke JPG/PNG (pdf.js)
+- [x] Tool: PDF ke JPG/PNG (pdf.js)
 - [ ] Tool: JPG/PNG ke PDF
 - [ ] Aktifkan servis `web` di `docker-compose.yml` + Dockerfile web
 - [ ] Tambah job lint/build web di CI
