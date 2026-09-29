@@ -32,7 +32,7 @@ Centang saat selesai. Kerjakan berurutan dari atas.
       auto-hapus file di server, tanpa jual data) pakai Card shadcn + ikon Lucide
 - [x] Tambah section "Kualitas Konversi" (3 poin: mesin open-source
       terpilih per tipe file, kontrol kompresi, hasil akurat)
-- [ ] Update Footer: "© 2026 Rangga Dewa Yudhistira", "Made in Cibubur,
+- [x] Update Footer: "© 2026 Rangga Dewa Yudhistira", "Made in Cibubur,
       Indonesia", link "Contact Us"
 
 ## Fase 2: Backend tool berat (Tahap 2 PRD)
