@@ -52,4 +52,25 @@ export const ALAT: readonly Alat[] = [
     proses: "browser",
     status: "tersedia",
   },
+  {
+    slug: "pdf-ke-markdown",
+    nama: "PDF ke Markdown",
+    deskripsi: "Ubah PDF menjadi teks atau Markdown.",
+    proses: "server",
+    status: "tersedia",
+  },
+  {
+    slug: "ocr",
+    nama: "OCR (scan ke teks)",
+    deskripsi: "Ambil teks dari hasil scan berupa gambar atau PDF.",
+    proses: "server",
+    status: "tersedia",
+  },
+  {
+    slug: "kompres-pdf",
+    nama: "Kompres PDF",
+    deskripsi: "Kecilkan ukuran PDF, bisa dengan target ukuran tertentu.",
+    proses: "server",
+    status: "tersedia",
+  },
 ];

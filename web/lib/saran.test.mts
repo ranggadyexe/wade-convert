@@ -8,6 +8,9 @@ test("saranAlat untuk PDF menyarankan alat PDF", () => {
     "gabung-pdf",
     "pisah-pdf",
     "pdf-ke-gambar",
+    "pdf-ke-markdown",
+    "kompres-pdf",
+    "ocr",
   ]);
 });
 
@@ -16,6 +19,7 @@ test("saranAlat untuk gambar menyarankan alat gambar", () => {
     "kompres-gambar",
     "konversi-gambar",
     "gambar-ke-pdf",
+    "ocr",
   ]);
 });
 
@@ -24,6 +28,9 @@ test("saranAlat menggabungkan saran untuk berkas campuran", () => {
     "gabung-pdf",
     "pisah-pdf",
     "pdf-ke-gambar",
+    "pdf-ke-markdown",
+    "kompres-pdf",
+    "ocr",
     "kompres-gambar",
     "konversi-gambar",
     "gambar-ke-pdf",

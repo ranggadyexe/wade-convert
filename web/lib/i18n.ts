@@ -7,6 +7,16 @@ export const teks = {
   daftarAlatDeskripsi:
     "Semua alat di bawah ini berjalan langsung di browser — filemu tidak diunggah. Tool berat seperti OCR dan PDF ke Markdown menyusul.",
   labelBrowser: "Diproses di browser",
+  labelServer: "Diproses di server",
+  server: {
+    proses: "Proses",
+    memproses: "Memproses...",
+    gagal: "Gagal memproses file",
+    tidakTerhubung: "Tidak bisa menghubungi server",
+    catatan: "File diunggah ke server dan dihapus otomatis setelah 15 menit.",
+    preset: "Kualitas",
+    targetKb: "Target ukuran (KB, opsional)",
+  },
   labelSegera: "Segera",
   navAlat: "Alat",
   repoGitHub: "Repositori GitHub",
