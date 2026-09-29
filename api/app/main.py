@@ -8,6 +8,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from .config import settings
 from .middleware import BatasUkuranMiddleware, RateLimitMiddleware
 from .penyimpanan import pembersih_periodik
+from .routers import konversi, unduh
 
 
 @asynccontextmanager
@@ -45,3 +46,7 @@ app.add_middleware(
 @app.get("/health")
 def health() -> dict[str, str]:
     return {"status": "ok"}
+
+
+app.include_router(konversi.router)
+app.include_router(unduh.router)
