@@ -5,8 +5,15 @@ import { ALAT } from "./tools.ts";
 type Jenis = "pdf" | "gambar";
 
 const SARAN: Record<Jenis, readonly string[]> = {
-  pdf: ["gabung-pdf", "pisah-pdf", "pdf-ke-gambar"],
-  gambar: ["kompres-gambar", "konversi-gambar", "gambar-ke-pdf"],
+  pdf: [
+    "gabung-pdf",
+    "pisah-pdf",
+    "pdf-ke-gambar",
+    "pdf-ke-markdown",
+    "kompres-pdf",
+    "ocr",
+  ],
+  gambar: ["kompres-gambar", "konversi-gambar", "gambar-ke-pdf", "ocr"],
 };
 
 function jenisBerkas(nama: string): Jenis | null {
@@ -29,5 +36,5 @@ export function saranAlat(namaBerkas: readonly string[]): string[] {
   const tersedia = new Set(
     ALAT.filter((alat) => alat.status === "tersedia").map((alat) => alat.slug),
   );
-  return urutan.filter((slug) => tersedia.has(slug));
+  return [...new Set(urutan)].filter((slug) => tersedia.has(slug));
 }

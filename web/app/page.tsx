@@ -72,7 +72,15 @@ function IsiKartu({ alat }: { alat: Alat }) {
       </CardHeader>
       <CardContent className="flex flex-1 flex-col justify-between gap-3">
         <p className="text-muted-foreground">{alat.deskripsi}</p>
-        <p className="text-xs font-medium text-primary">{teks.labelBrowser}</p>
+        <p
+          className={`text-xs font-medium ${
+            alat.proses === "server"
+              ? "text-amber-600 dark:text-amber-400"
+              : "text-primary"
+          }`}
+        >
+          {alat.proses === "server" ? teks.labelServer : teks.labelBrowser}
+        </p>
       </CardContent>
     </Card>
   );

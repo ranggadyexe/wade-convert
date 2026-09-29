@@ -1,0 +1,40 @@
+import type { Metadata } from "next";
+
+import { AlatServer } from "@/components/alat/alat-server";
+import { teks } from "@/lib/i18n";
+import { EKSTENSI_GAMBAR } from "@/lib/kompres";
+import { EKSTENSI_PDF } from "@/lib/pdf";
+import { ALAT } from "@/lib/tools";
+
+const alat = ALAT.find((item) => item.slug === "ocr");
+
+export const metadata: Metadata = {
+  title: `${alat?.nama ?? teks.namaSitus} — ${teks.namaSitus}`,
+  description: alat?.deskripsi,
+};
+
+export default function HalamanOcr() {
+  return (
+    <>
+      <section className="max-w-2xl">
+        <h1 className="font-heading text-3xl font-bold tracking-tight">
+          {alat?.nama}
+        </h1>
+        <p className="mt-3 text-muted-foreground">{alat?.deskripsi}</p>
+        <p className="mt-2 text-xs font-medium text-amber-600 dark:text-amber-400">
+          {teks.labelServer}
+        </p>
+        <p className="mt-1 text-xs text-muted-foreground">
+          {teks.server.catatan}
+        </p>
+      </section>
+
+      <section className="mt-8 max-w-2xl">
+        <AlatServer
+          jalur="/api/v1/convert/ocr"
+          terima={[...EKSTENSI_PDF, ...EKSTENSI_GAMBAR]}
+        />
+      </section>
+    </>
+  );
+}
