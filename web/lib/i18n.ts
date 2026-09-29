@@ -11,6 +11,13 @@ export const teks = {
   hero: {
     ilustrasi: "Ilustrasi contoh konversi file dari PDF ke JPG",
   },
+  pilih: {
+    judul: "Pilih file untuk memulai",
+    deskripsi:
+      "File tidak diunggah ke server; pilih alat yang cocok di bawah ini.",
+    saran: "Alat yang cocok untuk filemu:",
+    tidakCocok: "Belum ada alat untuk tipe file ini.",
+  },
   gantiTema: "Ganti tema terang/gelap",
   unggah: {
     tarik: "Tarik file ke sini atau klik untuk memilih",
