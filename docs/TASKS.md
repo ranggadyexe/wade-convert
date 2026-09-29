@@ -42,7 +42,7 @@ Centang saat selesai. Kerjakan berurutan dari atas.
 - [x] Endpoint OCR (OCRmyPDF/Tesseract, bahasa `ind`+`eng`)
 - [x] Endpoint kompres PDF (Ghostscript), termasuk target ukuran
 - [x] Test untuk tiap endpoint (pytest) + file contoh kecil
-- [ ] Halaman web untuk tiap tool server, dengan label "diproses di server"
+- [x] Halaman web untuk tiap tool server, dengan label "diproses di server"
 
 ## Fase 3: DevOps
 - [ ] CI: lint, test, build image (GitHub Actions) dengan cache
