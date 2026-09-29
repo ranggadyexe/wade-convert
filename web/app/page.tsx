@@ -1,4 +1,4 @@
-import { FileImage, FileText } from "lucide-react";
+import { EyeOff, FileImage, FileText, ShieldCheck, Trash2 } from "lucide-react";
 import Link from "next/link";
 
 import { Badge } from "@/components/ui/badge";
@@ -79,6 +79,40 @@ function KartuAlat({ alat }: { alat: Alat }) {
   return <IsiKartu alat={alat} />;
 }
 
+const IKON_KEAMANAN = [ShieldCheck, Trash2, EyeOff];
+
+function KeamananData() {
+  return (
+    <section className="mt-14" aria-labelledby="keamanan-data">
+      <h2
+        id="keamanan-data"
+        className="font-heading text-2xl font-bold tracking-tight"
+      >
+        {teks.keamanan.judul}
+      </h2>
+      <p className="mt-2 max-w-2xl text-muted-foreground">
+        {teks.keamanan.deskripsi}
+      </p>
+      <div className="mt-6 grid gap-4 sm:grid-cols-3">
+        {teks.keamanan.poin.map((poin, indeks) => {
+          const Ikon = IKON_KEAMANAN[indeks];
+          return (
+            <Card key={poin.judul}>
+              <CardHeader>
+                <Ikon className="size-5 text-primary" aria-hidden="true" />
+                <CardTitle>{poin.judul}</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground">{poin.isi}</p>
+              </CardContent>
+            </Card>
+          );
+        })}
+      </div>
+    </section>
+  );
+}
+
 export default function Home() {
   return (
     <>
@@ -106,6 +140,8 @@ export default function Home() {
           ))}
         </ul>
       </section>
+
+      <KeamananData />
     </>
   );
 }

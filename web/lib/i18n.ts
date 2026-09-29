@@ -75,6 +75,25 @@ export const teks = {
     hasil: "Hasil PDF",
     urutan: "Urutan halaman mengikuti urutan daftar.",
   },
+  keamanan: {
+    judul: "Keamanan Data",
+    deskripsi:
+      "Privasi file adalah alasan utama proyek ini dibuat — bukan sekadar tambahan.",
+    poin: [
+      {
+        judul: "Diproses di browser",
+        isi: "File tidak diunggah; konversi berjalan di perangkatmu sendiri.",
+      },
+      {
+        judul: "Auto-hapus di server",
+        isi: "Tool berat menghapus file otomatis setelah 15 menit (TTL).",
+      },
+      {
+        judul: "Tanpa jual data",
+        isi: "Tidak ada pelacakan iklan; file tidak dijual atau ditambang.",
+      },
+    ],
+  },
   footerCatatan: "Open source berlisensi AGPL-3.0. Tanpa akun dan tanpa iklan.",
 } as const;
 
