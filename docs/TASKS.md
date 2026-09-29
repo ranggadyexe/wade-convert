@@ -41,7 +41,7 @@ Centang saat selesai. Kerjakan berurutan dari atas.
 - [x] Endpoint PDF ke teks/Markdown (PyMuPDF4LLM)
 - [x] Endpoint OCR (OCRmyPDF/Tesseract, bahasa `ind`+`eng`)
 - [x] Endpoint kompres PDF (Ghostscript), termasuk target ukuran
-- [ ] Test untuk tiap endpoint (pytest) + file contoh kecil
+- [x] Test untuk tiap endpoint (pytest) + file contoh kecil
 - [ ] Halaman web untuk tiap tool server, dengan label "diproses di server"
 
 ## Fase 3: DevOps

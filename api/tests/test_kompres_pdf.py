@@ -5,7 +5,6 @@ import pymupdf
 import pytest
 from fastapi.testclient import TestClient
 
-from app.config import settings
 from app.main import app
 
 client = TestClient(app)
@@ -13,12 +12,6 @@ client = TestClient(app)
 butuh_gs = pytest.mark.skipif(
     shutil.which("gs") is None, reason="ghostscript tidak terpasang"
 )
-
-
-@pytest.fixture
-def penyimpanan_sementara(tmp_path, monkeypatch):
-    monkeypatch.setattr(settings, "storage_dir", str(tmp_path))
-    return tmp_path
 
 
 def pdf_bergambar() -> bytes:
