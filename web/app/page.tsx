@@ -1,3 +1,4 @@
+import { FileImage, FileText } from "lucide-react";
 import Link from "next/link";
 
 import { Badge } from "@/components/ui/badge";
@@ -10,6 +11,42 @@ import {
 } from "@/components/ui/card";
 import { teks } from "@/lib/i18n";
 import { ALAT, type Alat } from "@/lib/tools";
+
+function IlustrasiKonversi() {
+  return (
+    <div
+      role="img"
+      aria-label={teks.hero.ilustrasi}
+      className="flex items-center justify-center gap-3"
+    >
+      <div className="flex items-center gap-2 rounded-xl border border-border bg-card px-3 py-2 shadow-sm">
+        <FileText className="size-4 text-muted-foreground" aria-hidden="true" />
+        <span className="text-sm font-medium">PDF</span>
+      </div>
+      <span className="rounded-full border border-border bg-muted px-2 py-0.5 text-xs font-semibold text-muted-foreground">
+        TO
+      </span>
+      <div className="flex items-center gap-2 rounded-xl border border-primary/40 bg-card px-3 py-2 shadow-sm">
+        <FileImage className="size-4 text-primary" aria-hidden="true" />
+        <span className="text-sm font-medium">JPG</span>
+      </div>
+    </div>
+  );
+}
+
+function Hero() {
+  return (
+    <section className="grid items-center gap-8 py-6 sm:grid-cols-[1fr_auto] sm:py-12">
+      <div className="max-w-2xl">
+        <h1 className="font-heading text-4xl font-bold tracking-tight text-balance sm:text-5xl">
+          {teks.tagline}
+        </h1>
+        <p className="mt-4 text-lg text-muted-foreground">{teks.deskripsi}</p>
+      </div>
+      <IlustrasiKonversi />
+    </section>
+  );
+}
 
 function IsiKartu({ alat }: { alat: Alat }) {
   return (
@@ -44,12 +81,7 @@ function KartuAlat({ alat }: { alat: Alat }) {
 export default function Home() {
   return (
     <>
-      <section className="max-w-2xl">
-        <h1 className="font-heading text-3xl font-bold tracking-tight sm:text-4xl">
-          {teks.tagline}
-        </h1>
-        <p className="mt-3 text-muted-foreground">{teks.deskripsi}</p>
-      </section>
+      <Hero />
 
       <section className="mt-12" aria-labelledby="daftar-alat">
         <h2 id="daftar-alat" className="font-heading text-lg font-semibold">
