@@ -26,7 +26,7 @@ Centang saat selesai. Kerjakan berurutan dari atas.
 - [x] Redesain Header: tambah nav "Alat" (scroll ke grid tools) + ikon GitHub
 - [x] Redesain Hero: judul besar + deskripsi + ilustrasi kecil bergaya
       CloudConvert (ikon file dengan panah "TO", lihat referensi terlampir)
-- [ ] Tambah card "pilih file" besar di tengah sebagai CTA utama, di bawah hero
+- [x] Tambah card "pilih file" besar di tengah sebagai CTA utama, di bawah hero
 - [ ] Reframe grid tools jadi section "Alat yang Didukung"
 - [ ] Tambah section "Keamanan Data" (3 poin: diproses di browser,
       auto-hapus file di server, tanpa jual data) pakai Card shadcn + ikon Lucide
