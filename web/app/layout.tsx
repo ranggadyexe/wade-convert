@@ -63,12 +63,12 @@ function Footer() {
           <p className="text-xs">{teks.footerCatatan}</p>
         </div>
         <p>{teks.dibuatDi}</p>
-        <a
-          href="mailto:ranggadewa853@gmail.com"
+        <Link
+          href="/kontak"
           className="underline-offset-4 hover:text-foreground hover:underline"
         >
-          {teks.kontak}
-        </a>
+          {teks.kontakFooter}
+        </Link>
       </div>
     </footer>
   );
