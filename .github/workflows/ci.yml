@@ -18,6 +18,10 @@ jobs:
           python-version: "3.12"
           cache: pip
           cache-dependency-path: api/requirements.txt
+      - run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends \
+            tesseract-ocr tesseract-ocr-ind tesseract-ocr-eng ghostscript qpdf
       - run: pip install -r requirements.txt
       - run: ruff check .
       - run: ruff format --check .
