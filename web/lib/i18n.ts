@@ -114,6 +114,9 @@ export const teks = {
     ],
   },
   footerCatatan: "Open source berlisensi AGPL-3.0. Tanpa akun dan tanpa iklan.",
+  hakCipta: "© 2026 Rangga Dewa Yudhistira",
+  dibuatDi: "Made in Cibubur, Indonesia",
+  kontak: "Contact Us",
 } as const;
 
 export const kamus = { id: teks } as const;
