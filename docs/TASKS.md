@@ -30,7 +30,7 @@ Centang saat selesai. Kerjakan berurutan dari atas.
 - [x] Reframe grid tools jadi section "Alat yang Didukung"
 - [x] Tambah section "Keamanan Data" (3 poin: diproses di browser,
       auto-hapus file di server, tanpa jual data) pakai Card shadcn + ikon Lucide
-- [ ] Tambah section "Kualitas Konversi" (3 poin: mesin open-source
+- [x] Tambah section "Kualitas Konversi" (3 poin: mesin open-source
       terpilih per tipe file, kontrol kompresi, hasil akurat)
 - [ ] Update Footer: "© 2026 Rangga Dewa Yudhistira", "Made in Cibubur,
       Indonesia", link "Contact Us"
