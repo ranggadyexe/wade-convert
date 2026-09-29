@@ -39,7 +39,7 @@ Centang saat selesai. Kerjakan berurutan dari atas.
 - [x] Middleware: validasi ukuran/tipe file, rate limit, CORS dari env
 - [x] Penyimpanan sementara + pembersih TTL otomatis
 - [x] Endpoint PDF ke teks/Markdown (PyMuPDF4LLM)
-- [ ] Endpoint OCR (OCRmyPDF/Tesseract, bahasa `ind`+`eng`)
+- [x] Endpoint OCR (OCRmyPDF/Tesseract, bahasa `ind`+`eng`)
 - [ ] Endpoint kompres PDF (Ghostscript), termasuk target ukuran
 - [ ] Test untuk tiap endpoint (pytest) + file contoh kecil
 - [ ] Halaman web untuk tiap tool server, dengan label "diproses di server"
