@@ -1,6 +1,7 @@
 import asyncio
 import shutil
 from pathlib import Path
+from typing import Annotated
 
 import pymupdf
 import pymupdf4llm
@@ -14,7 +15,7 @@ router = APIRouter(prefix="/api/v1/convert", tags=["konversi"])
 
 
 @router.post("/pdf-to-md")
-async def pdf_ke_md(berkas: UploadFile = File(...)) -> dict[str, object]:
+async def pdf_ke_md(berkas: Annotated[UploadFile, File()]) -> dict[str, object]:
     validasi_unggahan(
         berkas, tipe_diizinkan={"application/pdf"}, maks_mb=settings.max_upload_mb
     )
