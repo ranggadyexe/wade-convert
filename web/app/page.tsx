@@ -2,6 +2,7 @@ import { FileImage, FileText } from "lucide-react";
 import Link from "next/link";
 
 import { Badge } from "@/components/ui/badge";
+import { PilihBerkas } from "@/components/pilih-berkas";
 import {
   Card,
   CardAction,
@@ -82,6 +83,10 @@ export default function Home() {
   return (
     <>
       <Hero />
+
+      <section className="mt-6">
+        <PilihBerkas />
+      </section>
 
       <section className="mt-12" aria-labelledby="daftar-alat">
         <h2 id="daftar-alat" className="font-heading text-lg font-semibold">
