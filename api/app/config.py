@@ -8,6 +8,7 @@ class Settings(BaseSettings):
     job_timeout_seconds: int = 120
     rate_limit_per_minute: int = 20
     cors_origins: str = "http://localhost:3000"
+    storage_dir: str = "/tmp/wade-convert"
 
     @property
     def cors_origin_list(self) -> list[str]:
