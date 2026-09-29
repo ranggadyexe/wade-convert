@@ -36,7 +36,7 @@ Centang saat selesai. Kerjakan berurutan dari atas.
       Indonesia", link "Contact Us"
 
 ## Fase 2: Backend tool berat (Tahap 2 PRD)
-- [ ] Middleware: validasi ukuran/tipe file, rate limit, CORS dari env
+- [x] Middleware: validasi ukuran/tipe file, rate limit, CORS dari env
 - [ ] Penyimpanan sementara + pembersih TTL otomatis
 - [ ] Endpoint PDF ke teks/Markdown (PyMuPDF4LLM)
 - [ ] Endpoint OCR (OCRmyPDF/Tesseract, bahasa `ind`+`eng`)
