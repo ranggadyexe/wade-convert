@@ -6,6 +6,8 @@ export const teks = {
   daftarAlat: "Alat yang tersedia",
   labelBrowser: "Diproses di browser",
   labelSegera: "Segera",
+  navAlat: "Alat",
+  repoGitHub: "Repositori GitHub",
   gantiTema: "Ganti tema terang/gelap",
   unggah: {
     tarik: "Tarik file ke sini atau klik untuk memilih",

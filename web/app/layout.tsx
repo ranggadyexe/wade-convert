@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import { Geist } from "next/font/google";
 import Link from "next/link";
 
+import { IkonGitHub } from "@/components/ikon-github";
 import { TombolTema } from "@/components/theme-toggle";
+import { Button } from "@/components/ui/button";
 import { teks } from "@/lib/i18n";
 import { cn } from "@/lib/utils";
 
@@ -30,7 +32,23 @@ function Header() {
         >
           {teks.namaSitus}
         </Link>
-        <TombolTema kunciTema={KUNCI_TEMA} />
+        <nav className="flex items-center gap-2">
+          <Button asChild variant="ghost" size="sm">
+            <Link href="/#daftar-alat">{teks.navAlat}</Link>
+          </Button>
+          <Button asChild variant="ghost" size="icon">
+            <a
+              href="https://github.com/ranggadyexe/wade-convert"
+              target="_blank"
+              rel="noreferrer"
+              aria-label={teks.repoGitHub}
+              title={teks.repoGitHub}
+            >
+              <IkonGitHub aria-hidden="true" />
+            </a>
+          </Button>
+          <TombolTema kunciTema={KUNCI_TEMA} />
+        </nav>
       </div>
     </header>
   );
@@ -51,7 +69,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     <html
       lang="id"
       suppressHydrationWarning
-      className={cn("font-sans", geist.variable)}
+      className={cn("scroll-smooth font-sans", geist.variable)}
     >
       <body className="flex min-h-dvh flex-col bg-background text-foreground antialiased">
         <script dangerouslySetInnerHTML={{ __html: SKRIP_TEMA }} />
