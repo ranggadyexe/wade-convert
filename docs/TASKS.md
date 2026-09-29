@@ -19,7 +19,7 @@ Centang saat selesai. Kerjakan berurutan dari atas.
 - [x] Tool: Pisah PDF (pdf-lib)
 - [x] Tool: PDF ke JPG/PNG (pdf.js)
 - [x] Tool: JPG/PNG ke PDF
-- [ ] Aktifkan servis `web` di `docker-compose.yml` + Dockerfile web
+- [x] Aktifkan servis `web` di `docker-compose.yml` + Dockerfile web
 - [ ] Tambah job lint/build web di CI
 
 ## Fase 2: Backend tool berat (Tahap 2 PRD)
