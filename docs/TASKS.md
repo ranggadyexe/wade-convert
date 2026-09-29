@@ -37,7 +37,7 @@ Centang saat selesai. Kerjakan berurutan dari atas.
 
 ## Fase 2: Backend tool berat (Tahap 2 PRD)
 - [x] Middleware: validasi ukuran/tipe file, rate limit, CORS dari env
-- [ ] Penyimpanan sementara + pembersih TTL otomatis
+- [x] Penyimpanan sementara + pembersih TTL otomatis
 - [ ] Endpoint PDF ke teks/Markdown (PyMuPDF4LLM)
 - [ ] Endpoint OCR (OCRmyPDF/Tesseract, bahasa `ind`+`eng`)
 - [ ] Endpoint kompres PDF (Ghostscript), termasuk target ukuran
