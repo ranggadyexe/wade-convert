@@ -3,7 +3,9 @@ export const teks = {
   tagline: "Konversi file cepat, gratis, dan privat",
   deskripsi:
     "Toolkit konversi PDF dan gambar. Sebagian besar alat diproses langsung di browser, jadi filemu tidak perlu diunggah.",
-  daftarAlat: "Alat yang tersedia",
+  daftarAlat: "Alat yang Didukung",
+  daftarAlatDeskripsi:
+    "Semua alat di bawah ini berjalan langsung di browser — filemu tidak diunggah. Tool berat seperti OCR dan PDF ke Markdown menyusul.",
   labelBrowser: "Diproses di browser",
   labelSegera: "Segera",
   navAlat: "Alat",

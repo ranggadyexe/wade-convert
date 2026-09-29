@@ -88,11 +88,17 @@ export default function Home() {
         <PilihBerkas />
       </section>
 
-      <section className="mt-12" aria-labelledby="daftar-alat">
-        <h2 id="daftar-alat" className="font-heading text-lg font-semibold">
+      <section className="mt-14" aria-labelledby="daftar-alat">
+        <h2
+          id="daftar-alat"
+          className="font-heading text-2xl font-bold tracking-tight"
+        >
           {teks.daftarAlat}
         </h2>
-        <ul className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        <p className="mt-2 max-w-2xl text-muted-foreground">
+          {teks.daftarAlatDeskripsi}
+        </p>
+        <ul className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {ALAT.map((alat) => (
             <li key={alat.slug}>
               <KartuAlat alat={alat} />
