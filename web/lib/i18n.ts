@@ -94,6 +94,25 @@ export const teks = {
       },
     ],
   },
+  kualitas: {
+    judul: "Kualitas Konversi",
+    deskripsi:
+      "Mesin dipilih sesuai jenis berkas, bukan satu alat untuk semua.",
+    poin: [
+      {
+        judul: "Mesin open-source terpilih",
+        isi: "pdf-lib, pdf.js, PyMuPDF4LLM, dan Tesseract dipakai sesuai tipe berkas.",
+      },
+      {
+        judul: "Kontrol kompresi",
+        isi: "Atur kualitas dan ukuran hasil sesuai kebutuhan, misalnya syarat unggah pendaftaran.",
+      },
+      {
+        judul: "Hasil akurat",
+        isi: "Teks, gambar, dan tata letak dipertahankan semaksimal mungkin.",
+      },
+    ],
+  },
   footerCatatan: "Open source berlisensi AGPL-3.0. Tanpa akun dan tanpa iklan.",
 } as const;
 
