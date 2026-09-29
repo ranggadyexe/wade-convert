@@ -1,4 +1,14 @@
-import { EyeOff, FileImage, FileText, ShieldCheck, Trash2 } from "lucide-react";
+import {
+  BadgeCheck,
+  Cpu,
+  EyeOff,
+  FileImage,
+  FileText,
+  ShieldCheck,
+  SlidersHorizontal,
+  Trash2,
+  type LucideIcon,
+} from "lucide-react";
 import Link from "next/link";
 
 import { Badge } from "@/components/ui/badge";
@@ -79,37 +89,71 @@ function KartuAlat({ alat }: { alat: Alat }) {
   return <IsiKartu alat={alat} />;
 }
 
-const IKON_KEAMANAN = [ShieldCheck, Trash2, EyeOff];
+const IKON_KEAMANAN: LucideIcon[] = [ShieldCheck, Trash2, EyeOff];
+const IKON_KUALITAS: LucideIcon[] = [Cpu, SlidersHorizontal, BadgeCheck];
 
-function KeamananData() {
+type Poin = { judul: string; isi: string };
+
+function BagianPoin({
+  id,
+  judul,
+  deskripsi,
+  poin,
+  ikon,
+}: {
+  id: string;
+  judul: string;
+  deskripsi: string;
+  poin: readonly Poin[];
+  ikon: readonly LucideIcon[];
+}) {
   return (
-    <section className="mt-14" aria-labelledby="keamanan-data">
-      <h2
-        id="keamanan-data"
-        className="font-heading text-2xl font-bold tracking-tight"
-      >
-        {teks.keamanan.judul}
+    <section className="mt-14" aria-labelledby={id}>
+      <h2 id={id} className="font-heading text-2xl font-bold tracking-tight">
+        {judul}
       </h2>
-      <p className="mt-2 max-w-2xl text-muted-foreground">
-        {teks.keamanan.deskripsi}
-      </p>
+      <p className="mt-2 max-w-2xl text-muted-foreground">{deskripsi}</p>
       <div className="mt-6 grid gap-4 sm:grid-cols-3">
-        {teks.keamanan.poin.map((poin, indeks) => {
-          const Ikon = IKON_KEAMANAN[indeks];
+        {poin.map((butir, indeks) => {
+          const Ikon = ikon[indeks];
           return (
-            <Card key={poin.judul}>
+            <Card key={butir.judul}>
               <CardHeader>
                 <Ikon className="size-5 text-primary" aria-hidden="true" />
-                <CardTitle>{poin.judul}</CardTitle>
+                <CardTitle>{butir.judul}</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-muted-foreground">{poin.isi}</p>
+                <p className="text-muted-foreground">{butir.isi}</p>
               </CardContent>
             </Card>
           );
         })}
       </div>
     </section>
+  );
+}
+
+function KeamananData() {
+  return (
+    <BagianPoin
+      id="keamanan-data"
+      judul={teks.keamanan.judul}
+      deskripsi={teks.keamanan.deskripsi}
+      poin={teks.keamanan.poin}
+      ikon={IKON_KEAMANAN}
+    />
+  );
+}
+
+function KualitasKonversi() {
+  return (
+    <BagianPoin
+      id="kualitas-konversi"
+      judul={teks.kualitas.judul}
+      deskripsi={teks.kualitas.deskripsi}
+      poin={teks.kualitas.poin}
+      ikon={IKON_KUALITAS}
+    />
   );
 }
 
@@ -142,6 +186,8 @@ export default function Home() {
       </section>
 
       <KeamananData />
+
+      <KualitasKonversi />
     </>
   );
 }
