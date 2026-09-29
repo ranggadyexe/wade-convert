@@ -29,7 +29,7 @@ export const ALAT: readonly Alat[] = [
     nama: "PDF ke JPG/PNG",
     deskripsi: "Ubah tiap halaman PDF menjadi gambar JPG atau PNG.",
     proses: "browser",
-    status: "segera",
+    status: "tersedia",
   },
   {
     slug: "gambar-ke-pdf",
