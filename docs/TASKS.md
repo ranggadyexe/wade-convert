@@ -45,7 +45,7 @@ Centang saat selesai. Kerjakan berurutan dari atas.
 - [x] Halaman web untuk tiap tool server, dengan label "diproses di server"
 
 ## Fase 3: DevOps
-- [ ] CI: lint, test, build image (GitHub Actions) dengan cache
+- [x] CI: lint, test, build image (GitHub Actions) dengan cache
 - [ ] Publikasi image ke GHCR
 - [ ] Staging privat + CD otomatis dari `main`
 - [ ] Healthcheck, log terstruktur
