@@ -46,7 +46,7 @@ Centang saat selesai. Kerjakan berurutan dari atas.
 
 ## Fase 3: DevOps
 - [x] CI: lint, test, build image (GitHub Actions) dengan cache
-- [ ] Publikasi image ke GHCR
+- [x] Publikasi image ke GHCR
 - [ ] Staging privat + CD otomatis dari `main`
 - [ ] Healthcheck, log terstruktur
 - [ ] Scan image dengan Trivy di CI
