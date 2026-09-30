@@ -46,7 +46,7 @@ Frontend statis (Next.js) untuk semua tool [B]. Backend FastAPI untuk tool [S], 
 | Lingkungan | Tujuan | Cara |
 |---|---|---|
 | Lokal | Pengembangan | `docker compose up` |
-| Staging | Uji deploy otomatis, akses privat | Dipilih nanti (Hugging Face Spaces / VPS) |
+| Staging | Uji deploy otomatis, akses privat | Sementara lokal dari image GHCR (ADR 0005); VPS/HF Spaces menyusul |
 | Produksi | Publik | Setelah tahap 2-3 stabil |
 
 Tahapan: (1) Docker + Compose, (2) CI GitHub Actions (lint, test, build), (3) CD ke staging, (4) publik + monitoring/logging/backup, (5) opsional: Terraform, Prometheus + Grafana, Trivy, Kubernetes lokal.

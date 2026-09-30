@@ -1,0 +1,7 @@
+services:
+  api:
+    build: !reset null
+    image: ghcr.io/ranggadyexe/wade-convert-api:latest
+  web:
+    build: !reset null
+    image: ghcr.io/ranggadyexe/wade-convert-web:latest
