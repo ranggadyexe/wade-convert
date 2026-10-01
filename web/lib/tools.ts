@@ -25,6 +25,13 @@ export const ALAT: readonly Alat[] = [
     status: "tersedia",
   },
   {
+    slug: "urut-pdf",
+    nama: "Putar & urutkan PDF",
+    deskripsi: "Putar halaman dan atur ulang urutannya sebelum disimpan.",
+    proses: "browser",
+    status: "tersedia",
+  },
+  {
     slug: "pdf-ke-gambar",
     nama: "PDF ke JPG/PNG",
     deskripsi: "Ubah tiap halaman PDF menjadi gambar JPG atau PNG.",

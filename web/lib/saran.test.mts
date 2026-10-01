@@ -7,6 +7,7 @@ test("saranAlat untuk PDF menyarankan alat PDF", () => {
   assert.deepEqual(saranAlat(["ktp.pdf"]), [
     "gabung-pdf",
     "pisah-pdf",
+    "urut-pdf",
     "pdf-ke-gambar",
     "pdf-ke-markdown",
     "kompres-pdf",
@@ -29,6 +30,7 @@ test("saranAlat menggabungkan saran untuk berkas campuran", () => {
   assert.deepEqual(saranAlat(["a.pdf", "b.png"]), [
     "gabung-pdf",
     "pisah-pdf",
+    "urut-pdf",
     "pdf-ke-gambar",
     "pdf-ke-markdown",
     "kompres-pdf",

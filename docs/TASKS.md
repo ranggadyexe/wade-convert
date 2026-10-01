@@ -59,7 +59,7 @@ Centang saat selesai. Kerjakan berurutan dari atas.
       (ditunda sampai ada VPS/domain)
 - [x] Tool: Resize dengan preset (pas foto, CPNS, SNBP)
 - [x] Tool: Hapus metadata EXIF
-- [ ] Tool: Rotate/urutkan halaman PDF
+- [x] Tool: Rotate/urutkan halaman PDF
 - [ ] Tool: Tanda tangan PDF
 - [ ] Tool: Watermark PDF
 - [ ] Tool: Hapus background
