@@ -84,9 +84,8 @@ jobs:
           context: ./${{ matrix.service }}
           push: false
           load: true
+          no-cache: true
           tags: wade-convert-${{ matrix.service }}:scan
-          cache-from: type=gha,scope=${{ matrix.service }}
-          cache-to: type=gha,mode=max,scope=${{ matrix.service }}
       - uses: aquasecurity/trivy-action@v0.36.0
         with:
           image-ref: wade-convert-${{ matrix.service }}:scan
