@@ -6,9 +6,12 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
 from .config import settings
+from .logging_config import konfigurasi_log
 from .middleware import BatasUkuranMiddleware, RateLimitMiddleware
 from .penyimpanan import pembersih_periodik
 from .routers import konversi, unduh
+
+konfigurasi_log(settings.log_level)
 
 
 @asynccontextmanager

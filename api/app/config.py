@@ -9,6 +9,7 @@ class Settings(BaseSettings):
     rate_limit_per_minute: int = 20
     cors_origins: str = "http://localhost:3000"
     storage_dir: str = "/tmp/wade-convert"
+    log_level: str = "INFO"
 
     @property
     def cors_origin_list(self) -> list[str]:
