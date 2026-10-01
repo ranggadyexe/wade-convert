@@ -50,7 +50,7 @@ Centang saat selesai. Kerjakan berurutan dari atas.
 - [ ] Staging privat + CD otomatis dari `main`
       (ditunda sampai ada VPS; sementara lokal dari GHCR - lihat ADR 0005)
 - [x] Deploy lokal dari image GHCR (`deploy.ps1`)
-- [ ] Healthcheck, log terstruktur
+- [x] Healthcheck, log terstruktur
 - [ ] Scan image dengan Trivy di CI
 - [ ] Draf kebijakan privasi dan syarat layanan
 
