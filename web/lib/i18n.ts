@@ -216,6 +216,14 @@ export const teks = {
       },
     ],
   },
+  resize: {
+    preset: "Pilih ukuran",
+    proses: "Ubah ukuran",
+    memproses: "Memproses...",
+    gagal: "Gagal mengubah ukuran gambar",
+    catatan:
+      "Ukuran mengikuti ketentuan umum pendaftaran. Selalu cek panduan resmi terbaru dari instansi tujuan.",
+  },
   footerCatatan: "Open source berlisensi AGPL-3.0. Tanpa akun dan tanpa iklan.",
   hakCipta: "© 2026 Rangga Dewa Yudhistira",
   dibuatDi: "Made in Cibubur, Indonesia",

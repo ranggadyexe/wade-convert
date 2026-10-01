@@ -13,7 +13,13 @@ const SARAN: Record<Jenis, readonly string[]> = {
     "kompres-pdf",
     "ocr",
   ],
-  gambar: ["kompres-gambar", "konversi-gambar", "gambar-ke-pdf", "ocr"],
+  gambar: [
+    "kompres-gambar",
+    "konversi-gambar",
+    "gambar-ke-pdf",
+    "resize-gambar",
+    "ocr",
+  ],
 };
 
 function jenisBerkas(nama: string): Jenis | null {

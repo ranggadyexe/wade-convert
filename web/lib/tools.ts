@@ -53,6 +53,13 @@ export const ALAT: readonly Alat[] = [
     status: "tersedia",
   },
   {
+    slug: "resize-gambar",
+    nama: "Resize (pas foto)",
+    deskripsi: "Ubah ukuran foto sesuai preset pas foto, CPNS, atau SNBP.",
+    proses: "browser",
+    status: "tersedia",
+  },
+  {
     slug: "pdf-ke-markdown",
     nama: "PDF ke Markdown",
     deskripsi: "Ubah PDF menjadi teks atau Markdown.",
