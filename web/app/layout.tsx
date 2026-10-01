@@ -63,12 +63,26 @@ function Footer() {
           <p className="text-xs">{teks.footerCatatan}</p>
         </div>
         <p>{teks.dibuatDi}</p>
-        <Link
-          href="/kontak"
-          className="underline-offset-4 hover:text-foreground hover:underline"
-        >
-          {teks.kontakFooter}
-        </Link>
+        <nav className="flex items-center gap-4">
+          <Link
+            href="/privasi"
+            className="underline-offset-4 hover:text-foreground hover:underline"
+          >
+            {teks.footerPrivasi}
+          </Link>
+          <Link
+            href="/syarat"
+            className="underline-offset-4 hover:text-foreground hover:underline"
+          >
+            {teks.footerSyarat}
+          </Link>
+          <Link
+            href="/kontak"
+            className="underline-offset-4 hover:text-foreground hover:underline"
+          >
+            {teks.kontakFooter}
+          </Link>
+        </nav>
       </div>
     </footer>
   );
