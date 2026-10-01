@@ -32,6 +32,13 @@ export const ALAT: readonly Alat[] = [
     status: "tersedia",
   },
   {
+    slug: "ttd-pdf",
+    nama: "Tanda tangan PDF",
+    deskripsi: "Gambar tanda tangan lalu tempel ke halaman PDF.",
+    proses: "browser",
+    status: "tersedia",
+  },
+  {
     slug: "pdf-ke-gambar",
     nama: "PDF ke JPG/PNG",
     deskripsi: "Ubah tiap halaman PDF menjadi gambar JPG atau PNG.",
