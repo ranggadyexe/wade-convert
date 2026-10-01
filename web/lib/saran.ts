@@ -9,6 +9,7 @@ const SARAN: Record<Jenis, readonly string[]> = {
     "gabung-pdf",
     "pisah-pdf",
     "urut-pdf",
+    "ttd-pdf",
     "pdf-ke-gambar",
     "pdf-ke-markdown",
     "kompres-pdf",
