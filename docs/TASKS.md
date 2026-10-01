@@ -51,7 +51,7 @@ Centang saat selesai. Kerjakan berurutan dari atas.
       (ditunda sampai ada VPS; sementara lokal dari GHCR - lihat ADR 0005)
 - [x] Deploy lokal dari image GHCR (`deploy.ps1`)
 - [x] Healthcheck, log terstruktur
-- [ ] Scan image dengan Trivy di CI
+- [x] Scan image dengan Trivy di CI
 - [ ] Draf kebijakan privasi dan syarat layanan
 
 ## Fase 4: Publik dan lanjutan
