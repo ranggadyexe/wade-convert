@@ -20,6 +20,7 @@ test("saranAlat untuk gambar menyarankan alat gambar", () => {
     "konversi-gambar",
     "gambar-ke-pdf",
     "resize-gambar",
+    "hapus-exif",
     "ocr",
   ]);
 });
@@ -36,6 +37,7 @@ test("saranAlat menggabungkan saran untuk berkas campuran", () => {
     "konversi-gambar",
     "gambar-ke-pdf",
     "resize-gambar",
+    "hapus-exif",
   ]);
 });
 
