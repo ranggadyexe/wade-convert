@@ -61,7 +61,7 @@ Centang saat selesai. Kerjakan berurutan dari atas.
 - [x] Tool: Hapus metadata EXIF
 - [x] Tool: Rotate/urutkan halaman PDF
 - [x] Tool: Tanda tangan PDF
-- [ ] Tool: Watermark PDF
+- [x] Tool: Watermark PDF
 - [ ] Tool: Hapus background
 - [ ] Tool tahap 4: PDF ke Word, Office ke PDF, ekstrak tabel CSV
 - [ ] Pipeline (rangkai langkah) + batch + unduh ZIP

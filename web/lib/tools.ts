@@ -39,6 +39,13 @@ export const ALAT: readonly Alat[] = [
     status: "tersedia",
   },
   {
+    slug: "watermark-pdf",
+    nama: "Watermark PDF",
+    deskripsi: "Tempel teks watermark ke semua halaman PDF.",
+    proses: "browser",
+    status: "tersedia",
+  },
+  {
     slug: "pdf-ke-gambar",
     nama: "PDF ke JPG/PNG",
     deskripsi: "Ubah tiap halaman PDF menjadi gambar JPG atau PNG.",
