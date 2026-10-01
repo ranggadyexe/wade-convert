@@ -58,7 +58,7 @@ Centang saat selesai. Kerjakan berurutan dari atas.
 - [ ] Domain, HTTPS, monitoring (Prometheus + Grafana), backup konfigurasi
       (ditunda sampai ada VPS/domain)
 - [x] Tool: Resize dengan preset (pas foto, CPNS, SNBP)
-- [ ] Tool: Hapus metadata EXIF
+- [x] Tool: Hapus metadata EXIF
 - [ ] Tool: Rotate/urutkan halaman PDF
 - [ ] Tool: Tanda tangan PDF
 - [ ] Tool: Watermark PDF
