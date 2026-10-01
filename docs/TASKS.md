@@ -52,7 +52,7 @@ Centang saat selesai. Kerjakan berurutan dari atas.
 - [x] Deploy lokal dari image GHCR (`deploy.ps1`)
 - [x] Healthcheck, log terstruktur
 - [x] Scan image dengan Trivy di CI
-- [ ] Draf kebijakan privasi dan syarat layanan
+- [x] Draf kebijakan privasi dan syarat layanan
 
 ## Fase 4: Publik dan lanjutan
 - [ ] Domain, HTTPS, monitoring (Prometheus + Grafana), backup konfigurasi

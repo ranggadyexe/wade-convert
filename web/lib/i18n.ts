@@ -123,9 +123,104 @@ export const teks = {
       },
     ],
   },
+  privasi: {
+    judul: "Kebijakan Privasi",
+    draf: "Draf — belum ditinjau penasihat hukum.",
+    diperbarui: "Terakhir diperbarui: 1 Oktober 2026",
+    bagian: [
+      {
+        judul: "Ringkasan",
+        isi: [
+          "Wade Convert tidak memakai akun, tidak menampilkan iklan, dan tidak menjual atau menambang data pengguna.",
+        ],
+      },
+      {
+        judul: "File yang diproses di browser",
+        isi: [
+          "Sebagian besar alat berjalan sepenuhnya di perangkatmu. File untuk alat tersebut tidak pernah dikirim ke server kami.",
+        ],
+      },
+      {
+        judul: "File untuk alat server",
+        isi: [
+          "Alat berat (seperti OCR, PDF ke Markdown, dan kompres PDF) mengunggah file ke server kami untuk diproses. File tersebut dihapus otomatis setelah batas waktu penyimpanan sementara (default 15 menit) dan tidak dipakai untuk keperluan lain.",
+        ],
+      },
+      {
+        judul: "Log server",
+        isi: [
+          "Server mencatat alamat IP dan waktu permintaan untuk membatasi penyalahgunaan (rate limit) dan menjaga keamanan layanan. Log ini tidak dipakai untuk membuat profil pengguna.",
+        ],
+      },
+      {
+        judul: "Data di perangkatmu",
+        isi: [
+          "Preferensi tema terang/gelap disimpan di penyimpanan lokal browser. Kami tidak memakai cookie pelacak maupun analitik pihak ketiga.",
+        ],
+      },
+      {
+        judul: "Kode terbuka dan kontak",
+        isi: [
+          "Proyek ini open source dengan lisensi AGPL-3.0, sehingga siapa pun dapat mengaudit cara kerjanya.",
+          "Pertanyaan tentang privasi bisa dikirim lewat halaman Kontak.",
+        ],
+      },
+    ],
+  },
+  syarat: {
+    judul: "Syarat dan Ketentuan",
+    draf: "Draf — belum ditinjau penasihat hukum.",
+    diperbarui: "Terakhir diperbarui: 1 Oktober 2026",
+    bagian: [
+      {
+        judul: "Layanan",
+        isi: [
+          "Wade Convert disediakan gratis dan apa adanya (as is), tanpa jaminan dalam bentuk apa pun.",
+        ],
+      },
+      {
+        judul: "Batasan penggunaan",
+        isi: [
+          "Ukuran file maksimum 20 MB per file, PDF maksimum 100 halaman, dan ada pembatasan jumlah permintaan per alamat IP. Batasan dapat berubah sewaktu-waktu.",
+        ],
+      },
+      {
+        judul: "Tanggung jawab pengguna",
+        isi: [
+          "Kamu hanya boleh mengunggah file yang kamu berhak memprosesnya. Dilarang memakai layanan ini untuk konten ilegal atau merugikan pihak lain.",
+        ],
+      },
+      {
+        judul: "File dan privasi",
+        isi: [
+          "File untuk alat server dihapus otomatis sesuai Kebijakan Privasi. Untuk dokumen yang sangat sensitif, gunakan alat yang diproses di browser bila memungkinkan.",
+        ],
+      },
+      {
+        judul: "Ketersediaan",
+        isi: [
+          "Layanan dapat berubah, dibatasi, atau dihentikan kapan saja, terutama untuk alat yang membutuhkan server.",
+        ],
+      },
+      {
+        judul: "Lisensi",
+        isi: [
+          "Kode sumber dilisensikan AGPL-3.0. Siapa pun yang menjalankan versi modifikasi sebagai layanan publik wajib membuka kode sumbernya.",
+        ],
+      },
+      {
+        judul: "Perubahan dan kontak",
+        isi: [
+          "Syarat ini dapat diperbarui sewaktu-waktu; tanggal pembaruan tercantum di halaman ini. Pertanyaan bisa dikirim lewat halaman Kontak.",
+        ],
+      },
+    ],
+  },
   footerCatatan: "Open source berlisensi AGPL-3.0. Tanpa akun dan tanpa iklan.",
   hakCipta: "© 2026 Rangga Dewa Yudhistira",
   dibuatDi: "Made in Cibubur, Indonesia",
+  footerPrivasi: "Privasi",
+  footerSyarat: "Syarat",
   kontakFooter: "Contact Us",
   kontak: {
     judul: "Hubungi Kami",
