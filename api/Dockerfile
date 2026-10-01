@@ -1,5 +1,7 @@
 FROM python:3.12-slim
 
+RUN apt-get update && apt-get upgrade -y && rm -rf /var/lib/apt/lists/*
+
 # Dependensi sistem untuk konversi (OCR, PDF, gambar)
 RUN apt-get update && apt-get install -y --no-install-recommends \
     ghostscript \
