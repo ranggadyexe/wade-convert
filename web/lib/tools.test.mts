@@ -4,9 +4,9 @@ import { test } from "node:test";
 import { ALAT } from "./tools.ts";
 
 test("daftar alat lengkap, unik, dengan proses dan status valid", () => {
-  assert.equal(ALAT.length, 11);
+  assert.equal(ALAT.length, 12);
   assert.equal(new Set(ALAT.map((alat) => alat.slug)).size, ALAT.length);
-  assert.equal(ALAT.filter((alat) => alat.proses === "browser").length, 8);
+  assert.equal(ALAT.filter((alat) => alat.proses === "browser").length, 9);
   assert.equal(ALAT.filter((alat) => alat.proses === "server").length, 3);
   for (const alat of ALAT) {
     assert.ok(alat.nama.length > 0, "nama alat kosong");

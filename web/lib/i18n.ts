@@ -237,6 +237,16 @@ export const teks = {
     catatan:
       "Metadata kamera, tanggal, dan GPS dibuang dengan menulis ulang gambar langsung di browser.",
   },
+  urut: {
+    proses: "Simpan PDF",
+    memproses: "Menyimpan...",
+    gagal: "Gagal menyusun PDF",
+    putar: "Putar halaman",
+    keKiri: "Geser halaman ke kiri",
+    keKanan: "Geser halaman ke kanan",
+    hasil: "Hasil PDF",
+    catatan: "Urutan chip mengikuti urutan halaman pada hasil.",
+  },
   footerCatatan: "Open source berlisensi AGPL-3.0. Tanpa akun dan tanpa iklan.",
   hakCipta: "© 2026 Rangga Dewa Yudhistira",
   dibuatDi: "Made in Cibubur, Indonesia",
