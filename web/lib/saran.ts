@@ -18,6 +18,7 @@ const SARAN: Record<Jenis, readonly string[]> = {
     "konversi-gambar",
     "gambar-ke-pdf",
     "resize-gambar",
+    "hapus-exif",
     "ocr",
   ],
 };

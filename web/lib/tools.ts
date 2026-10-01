@@ -60,6 +60,13 @@ export const ALAT: readonly Alat[] = [
     status: "tersedia",
   },
   {
+    slug: "hapus-exif",
+    nama: "Hapus metadata (EXIF)",
+    deskripsi: "Bersihkan metadata kamera dan lokasi GPS dari foto.",
+    proses: "browser",
+    status: "tersedia",
+  },
+  {
     slug: "pdf-ke-markdown",
     nama: "PDF ke Markdown",
     deskripsi: "Ubah PDF menjadi teks atau Markdown.",

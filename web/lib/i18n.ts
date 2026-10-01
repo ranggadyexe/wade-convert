@@ -224,6 +224,19 @@ export const teks = {
     catatan:
       "Ukuran mengikuti ketentuan umum pendaftaran. Selalu cek panduan resmi terbaru dari instansi tujuan.",
   },
+  exif: {
+    proses: "Bersihkan metadata",
+    memproses: "Membersihkan...",
+    gagal: "Gagal membersihkan metadata",
+    hasil: (jumlah: number, adaGps: boolean) =>
+      adaGps
+        ? `${jumlah} field metadata dihapus, termasuk data lokasi GPS.`
+        : `${jumlah} field metadata dihapus.`,
+    tidakAda:
+      "Tidak ada metadata yang terdeteksi; file tetap ditulis ulang tanpa metadata.",
+    catatan:
+      "Metadata kamera, tanggal, dan GPS dibuang dengan menulis ulang gambar langsung di browser.",
+  },
   footerCatatan: "Open source berlisensi AGPL-3.0. Tanpa akun dan tanpa iklan.",
   hakCipta: "© 2026 Rangga Dewa Yudhistira",
   dibuatDi: "Made in Cibubur, Indonesia",
